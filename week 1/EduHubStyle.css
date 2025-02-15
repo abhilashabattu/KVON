@@ -1,0 +1,104 @@
+*{
+    margin:0%;
+    padding: 0%;
+}
+
+header{
+    height: 40px;
+    
+}
+
+nav{
+    float: right;
+    margin-right:150px ;
+}
+
+.navUL{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navUL:first-child{
+    float: left;
+}
+
+.mainDiv{
+    height: 100vh;
+    
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+main{
+    background-image: linear-gradient(
+        to bottom,
+        #3d86fa,
+        #4484fb,
+        #679eff,
+        #b3d2ff,
+        #ebf3fe
+    );
+    
+}
+.image{
+    width: 600px;
+    /* margin-top: -250px;
+    margin-left: 500px;
+    padding-left: 300px; */
+    position: absolute;
+    top: 15%;
+    left:55%;
+}
+
+.heading{
+   padding-left: 12%;
+   margin-bottom: 5px;
+   font-size: 45px;
+   text-shadow:  2px 2px 4px #464141;
+}
+
+.subHeading{
+    font-size: 20px; 
+    padding-left: 12%;
+    padding-top: 12%;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+}
+
+.headingTail{
+    width: 500px;
+    /* margin-top:-340px;
+    margin-left: 12%;  */
+    font-size: 16px;
+    letter-spacing: 1px;
+    word-spacing: 1.2px;
+    position:relative;
+    margin:0 12%;
+}
+
+.exploreButton{
+    height: 40px;
+    width:150px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top:20px;
+    margin-left: 12%;
+    border-color: #3d86fa;
+    background-color:#3d86fa ;
+}
+
+.exploreButton:hover{
+    background-color: #1d5abc;
+    cursor: pointer;
+}
