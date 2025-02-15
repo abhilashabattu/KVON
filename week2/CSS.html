@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Basics</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire|neon|outline|shadow-multiple">
+    </head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        div.one{
+            width: 300px;
+            height: 100px;
+            border: 1px solid rgb(60, 179, 113);
+            background-color:rgb(60, 179, 113);
+        }
+
+        div.two{
+            width: 300px;
+            height: 100px;
+            border: 1px solid rgb(238, 130, 238);
+            background-color: rgb(238, 130, 238);
+        }
+
+        div.three{
+            width: 300px;
+            height: 100px;
+            border:1px solid rgb(106, 90, 205);
+            background-color: rgb(106, 90, 205);
+        }
+        div.four{
+            width: 300px;
+            height: 100px;
+            border: 1px solid rgb(120, 120, 120);
+            background-color: rgb(120, 120, 120);
+        }
+        div.five{
+            width: 300px;
+            height: 100px;
+            border:1px solid rgb(180, 180, 180);
+            background-color: rgb(180, 180, 180);
+        }
+
+        p{
+            padding: 5px;
+        }
+
+        p.oneP{
+            border: 4px groove red;
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+
+        p.twoP{
+            border: 5px ridge black;
+        }
+
+        p.threeP{
+            
+            outline-width: 10px;
+            outline-color: brown;
+            outline-style:ridge;
+        }
+
+        p.outlines{
+           
+            outline: 5px solid;
+            outline-offset: 5px;
+            outline-color: invert;
+        }
+
+        .text{
+            text-align: justify;
+            text-indent: 25px;
+            letter-spacing: 1px;
+            word-spacing: 1px;
+            font-family: 'Brush Script MT', cursive;  
+        }
+       
+        table,tr,th,td{
+            padding: 5px;
+            border-collapse:collapse;
+        }
+
+        td:hover{
+            background-color: #ada8a8;
+        }
+
+        tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+
+        .divOne{
+            width: 500px;
+            border: 1px solid black;
+            margin:auto;
+        }
+
+        .divSec{
+            max-width: 500px;
+            border: 1px solid black;
+            margin: auto;
+        }
+
+        .relative{
+            position: relative;
+        }
+
+        .imageText{
+            position: absolute;
+            top:10%;
+            left:10%;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .zIndex{
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .hiddenOverflow{
+            width: 300px;
+            height: 200px;
+            padding: 5px;
+            overflow: hidden;
+            border:1px solid black;
+            margin-bottom: 50px;
+        }
+
+        .scrollOverflow{
+            width: 300px;
+            height: 200px;
+            padding: 5px;
+            overflow: scroll;
+            border:1px solid black;
+            margin-bottom: 50px;
+        }
+
+        .autoOverflow{
+            width: 300px;
+            height: 200px;
+            padding: 5px;
+            overflow: auto;
+            border:1px solid black;
+            margin-bottom: 50px;
+        }
+        
+        .clearfix{
+            overflow: auto;
+            border: 3px solid #093e0b;
+            padding: 5px;
+        }
+
+        .desCombinator p{
+            background-color: #ff9999;
+
+        }
+
+        .childComb > p{
+            background-color: bisque;
+        }
+
+        .NextSibCombinator + p{
+            background-color: darkkhaki;
+        }
+
+        /* .SubSequent ~ p{
+            background-color: cadetblue;
+        } */
+
+        .pseudoClass p{
+            display: none;
+        }
+
+        .pseudoClass:hover p{
+            display: block;
+            background-color: #ff9999;
+        }
+
+        q:lang(no){
+            quotes: " # " " # ";
+        }
+
+        p.pseudoEle::first-letter{
+            text-transform: uppercase;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 25px;
+        }
+
+        ::selection{
+            background-color: beige;
+            color: #093e0b;
+        }
+
+    
+        .dropDownResult{
+            display:none;
+            background-color: burlywood;
+            color:#093e0b;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+
+        .dropdown:hover .dropDownResult{
+            display: inline;
+        }
+
+      
+        
+    </style>
+    <body>
+        <h1>Color</h1>
+        <div class="one"></div><br>
+        <div class="two"></div><br>
+        <div class="three"></div><br>
+        <div class="four"></div><br>
+        <div class="five"></div>
+        <hr>
+        <h1>Border and Outline</h1>
+        <p class="oneP">
+            Kvon Tech Services Private Limited, founded in May 2024, is a cutting-edge provider of 
+            IT solutions with a focus on enabling businesses in the digital age through customized 
+            software and cloud services. The company provides a broad range of technological expertise, 
+            including software development, digital marketing, DevOps services, and AI/ML solutions.Kvon Tech Services Private Limited, founded in May 2024, is a cutting-edge provider of 
+            IT solutions with a focus on enabling businesses in the digital age through customized 
+            software and cloud services. The company provides a broad range of technological expertise, 
+            including software development, digital marketing, DevOps services, and AI/ML solutions.Kvon Tech Services Private Limited, founded in May 2024, is a cutting-edge provider of 
+            IT solutions with a focus on enabling businesses in the digital age through customized 
+            software and cloud services. The company provides a broad range of technological expertise, 
+            including software development, digital marketing, DevOps services, and AI/ML solutions.Kvon Tech Services Private Limited, founded in May 2024, is a cutting-edge provider of 
+            IT solutions with a focus on enabling businesses in the digital age through customized 
+            software and cloud services. The company provides a broad range of technological expertise, 
+            including software development, digital marketing, DevOps services, and AI/ML solutions.
+    
+        </p>
+        <p class="twoP">Kvon Tech Services Private Limited, founded in May 2024, is a cutting-edge provider of 
+            IT solutions with a focus on enabling businesses in the digital age through customized 
+            software and cloud services. The company provides a broad range of technological expertise, 
+            including software development, digital marketing, DevOps services, and AI/ML solutions.Kvon Tech Services Private Limited, founded in May 2024, is a cutting-edge provider of 
+            IT solutions with a focus on enabling businesses in the digital age through customized 
+            software and cloud services. The company provides a broad range of technological expertise, 
+            including software development, digital marketing, DevOps services, and AI/ML solutions.Kvon Tech Services Private Limited, founded in May 2024, is a cutting-edge provider of 
+            IT solutions with a focus on enabling businesses in the digital age through customized 
+            software and cloud services. The company provides a broad range of technological expertise, 
+            including software development, digital marketing, DevOps services, and AI/ML solutions.Kvon Tech Services Private Limited, founded in May 2024, is a cutting-edge provider of 
+            IT solutions with a focus on enabling businesses in the digital age through customized 
+            software and cloud services. The company provides a broad range of technological expertise, 
+            including software development, digital marketing, DevOps services, and AI/ML solutions.
+        </p>
+        <p class="threeP">Kvon Tech Services Private Limited, founded in May 2024, is a cutting-edge provider of 
+            IT solutions with a focus on enabling businesses in the digital age through customized 
+            software and cloud services. The company provides a broad range of technological expertise, 
+            including software development, digital marketing, DevOps services, and AI/ML solutions.Kvon Tech Services Private Limited, founded in May 2024, is a cutting-edge provider of 
+            IT solutions with a focus on enabling businesses in the digital age through customized 
+            software and cloud services. The company provides a broad range of technological expertise, 
+            including software development, digital marketing, DevOps services, and AI/ML solutions.Kvon Tech Services Private Limited, founded in May 2024, is a cutting-edge provider of 
+            IT solutions with a focus on enabling businesses in the digital age through customized 
+            software and cloud services. The company provides a broad range of technological expertise, 
+            including software development, digital marketing, DevOps services, and AI/ML solutions.Kvon Tech Services Private Limited, founded in May 2024, is a cutting-edge provider of 
+            IT solutions with a focus on enabling businesses in the digital age through customized 
+            software and cloud services. The company provides a broad range of technological expertise, 
+            including software development, digital marketing, DevOps services, and AI/ML solutions.
+        </p>
+        <div style="margin: auto;">This paragraph has margin auto which center the element. This is working on div tag but not on &lt;p&gt; tag and &lt;h&gt; tag</div>
+        <p class="outlines">This is the illustration of outline offset.</p>
+
+        <h1>Text</h1>
+        <p class="text"><img src="kvon_logo.jpg" style="vertical-align:top; width: 40px; height: 30px;">Kvon Tech Services Private Limited, founded in May 2024, is a cutting-edge provider of 
+            IT solutions with a focus on enabling businesses in the digital age through customized 
+            software and cloud services. The company provides a broad range of technological expertise, 
+            including software development, digital marketing, DevOps services, and AI/ML solutions.Kvon Tech Services Private Limited, founded in May 2024, is a cutting-edge provider of 
+            IT solutions with a focus on enabling businesses in the digital age through customized 
+            software and cloud services. The company provides a broad range of technological expertise, 
+            including software development, digital marketing, DevOps services, and AI/ML solutions.Kvon Tech Services Private Limited, founded in May 2024, is a cutting-edge provider of 
+            IT solutions with a focus on enabling businesses in the digital age through customized 
+            software and cloud services. The company provides a broad range of technological expertise, 
+            including software development, digital marketing, DevOps services, and AI/ML solutions.Kvon Tech Services Private Limited, founded in May 2024, is a cutting-edge provider of 
+            IT solutions with a focus on enabling businesses in the digital age through customized 
+            software and cloud services. The company provides a broad range of technological expertise, 
+            including software development, digital marketing, DevOps services, and AI/ML solutions.
+        </p>
+        <hr>
+
+        <h2 style="text-shadow:  2px 2px 4px #000000;">Text Shadow</h2>
+        <h2 class="font-effect-neon" style="font-size: 30px;" >Google font style</h2>
+        <h2 class="font-effect-outline" style="font-size: 30px;" >Google font style</h2>
+        <h2 class="font-effect-shadow-multiple" style="font-size: 30px;" >Google font style</h2>
+
+        <h1>CSS Lists</h1>
+        <ul style=" background: #ff9999; padding: 25px; list-style-position: outside;">
+            <li style="background: #ffe5e5; padding: 5px;">Web Development</li>
+            <li style="background: #ffe5e5; padding: 5px;">App Development</li>
+            <li style="background: #ffe5e5; padding: 5px;">App Development</li>
+            <li style="background: #ffe5e5; padding: 5px;">Cyber Security</li>
+            <li style="background: #ffe5e5; padding: 5px;">Software Development</li>
+        </ul>
+        <hr>
+
+        <h1>CSS Table</h1>
+        <table >
+            <caption>Intern Details</caption>
+            <thead>
+                <tr>
+                    <th>S.no</th>
+                    <th>Intern Name</th>
+                    <th>Domain</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Abhilasha</td>
+                    <td>Web Development</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Anshul</td>
+                    <td>Web Development</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Gungun</td>
+                    <td>Web Development</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Naman</td>
+                    <td>Web Development</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Shradha</td>
+                    <td>Web Development</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h1>Max-Width</h1>
+        <div class="divOne">This div has width of 500px and margin is set to auto. 
+            This will add a scrollbar when browser window is small from the width of the div.
+        </div>
+        <br><br>
+        <div class="divSec">
+            This is a div with MAX-WIDTH of 500px and margin is set to auto. This will make the 
+            div responsive to different device width.
+        </div>
+        <br>
+        <hr>
+        <br>
+
+        <div class="relative">
+            <img src="C:\Users\Abhilasha\Downloads\FortChittor.jpg" width="600px;" height="300px;" style="opacity: 0.9;">
+            <div class="imageText">Chittor Fort</div>
+        </div>
+        <hr>
+        
+        <div style="position: relative; height: 350px;">
+            <img src="C:\Users\Abhilasha\Downloads\Tree_img.png" width="200px;" height="300px;" style="position: absolute; z-index: -1;">
+            <p class="zIndex">Z-Index</p>
+            <p style="font-size: 18px;">Image is behind the paragraph because image has z-index as -1.</p>
+        </div>
+
+        <hr>
+
+        <div class="hiddenOverflow">
+            <h3>Hidden Overflow</h3>
+            <p>Kvon Tech Services Private Limited, founded in May 2024, is a cutting-edge provider of 
+                IT solutions with a focus on enabling businesses in the digital age through customized 
+                software and cloud services. The company provides a broad range of technological expertise, 
+                including software development, digital marketing, DevOps services, and AI/ML solutions.
+                Kvon Tech Services Private Limited, founded in May 2024, is a cutting-edge provider of 
+                IT solutions with a focus on enabling businesses in the digital age through customized 
+                software and cloud services. The company provides a broad range of technological expertise, 
+                including software development, digital marketing, DevOps services, and AI/ML solutions.
+            </p>
+        </div>
+
+        <div class="scrollOverflow">
+            <h3>Scroll Overflow</h3>
+            <p>Kvon Tech Services Private Limited, founded in May 2024, is a cutting-edge provider of 
+                IT solutions with a focus on enabling businesses in the digital age through customized 
+                software and cloud services. The company provides a broad range of technological expertise, 
+                including software development, digital marketing, DevOps services, and AI/ML solutions.
+                Kvon Tech Services Private Limited, founded in May 2024, is a cutting-edge provider of 
+                IT solutions with a focus on enabling businesses in the digital age through customized 
+                software and cloud services. The company provides a broad range of technological expertise, 
+                including software development, digital marketing, DevOps services, and AI/ML solutions.
+            </p>
+        </div>
+
+        <div class="autoOverflow">
+            <h3>Auto Overflow</h3>
+            <p>Kvon Tech Services Private Limited, founded in May 2024, is a cutting-edge provider of 
+                IT solutions with a focus on enabling businesses in the digital age through customized 
+                software and cloud services. 
+            </p>
+        </div>
+        
+        <hr>
+        <h1>ClearFix</h1>
+        <div class="clearfix">
+            <img src="C:\Users\Abhilasha\Downloads\Tree_img.png" width="100px;" height="250px" style="float: right;" >
+            This is an example of ClearFix which fix the problem of overflow when image size is larger than the div. 
+        </div>
+        <hr>
+
+        <div class="desCombinator">
+            <h1>Descendent Combinator</h1>
+            <p>This is a paragraph.</p>
+            <p>This is second paragraph</p>
+            <section><p>This is paragraph inside section.</p></section>
+        </div>
+
+        <div class="childComb">
+            <h1>Child Combinator</h1>
+            <p>This paragraph is the child of div.</p>
+            <section><P>This para is child of Section</P></section>
+        </div>
+
+        <div class="NextSibCombinator">
+            <h1>Next Sibling Combinator</h1>
+            <p>This is next sibling COmbinator which selects element after the element.</p>
+        </div>
+        <p>This para will get selected by Next Sibling Combinator.</p>
+        <p>This para will remain unaffected.</p>
+
+        <div class="SubSequent">
+            <h1>Subsequent Sibling Combinator</h1>
+            <p>This is Subsequent Sibling Combinator. This selects all element that are next sibling of the particular element.</p>
+        </div>
+        <p>This para will get selected by Subsequent Sibling Combinator.</p>
+        <p>This para will get selected by Subsequent Sibling Combinator.</p>
+        <p>This para will get selected by Subsequent Sibling Combinator.</p>
+
+        <hr>
+        <h1>Pseudo Class</h1>
+        <div class="pseudoClass">
+            Hover the div to see the result.
+            <p>This is hover effect</p>
+        </div>
+        <h1>:lang pseudo class</h1>
+        <p>Some text <q lang="no">lang pseudo class</q>in the paragraph.</p>
+
+        <hr>
+        <h1>Pseudo Elements</h1>
+        <p class="pseudoEle">This is paragraph.</p>
+
+        <hr>
+        <h1>DropDowns</h1>
+        <div class="dropdown">
+            <p>Over me to see the DropDown</p>
+            <p class="dropDownResult">I am DropDown result.</p>
+        </div>
+        <p>Kvon Tech Services Private Limited, founded in May 2024, is a cutting-edge provider of 
+            IT solutions with a focus on enabling businesses in the digital age through customized 
+            software and cloud services. The company provides a broad range of technological expertise, 
+            including software development, digital marketing, DevOps services, and AI/ML solutions.
+            Kvon Tech Services Private Limited, founded in May 2024, is a cutting-edge provider of 
+            IT solutions with a focus on enabling businesses in the digital age through customized 
+            software and cloud services. The company provides a broad range of technological expertise, 
+            including software development, digital marketing, DevOps services, and AI/ML solutions.
+        </p>
+    </body>
+</html>

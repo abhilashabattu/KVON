@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Position</title>
+    </head>
+    <style>
+        /* div{
+            width:300px;
+            height:250px;
+            padding: 10px;
+            text-align: justify;
+            border:2px solid black;
+        } */
+
+        /* .divOne{
+            position:absolute;
+            top:15%;
+            left:10%;
+
+        }
+
+       .divTwo{
+        position:absolute;
+        top:15%;
+        left: 60%;
+       }
+
+       .divThree{
+        position:absolute;
+        top:55%;
+        left:10%;
+       }
+
+       .divFour{
+        position: absolute;
+        top:55%;
+        left:60%;
+       } */
+
+       
+
+       .header{
+            position:sticky;
+            top:0%;
+            left: 0%;
+            width: 100%;
+            height: auto;
+            
+       }
+
+       .header h1{
+        text-align: center;
+       }
+
+       .divOne{
+        width:250px;
+        height:250px;
+        border: 3px solid black;
+        text-align: justify;
+        padding: 10px;
+        margin: 30px;
+       }
+
+       .divTwo{
+        width:250px;
+        height:250px;
+        border: 3px solid black;
+        text-align: justify;
+        padding: 10px;
+        margin: 30px;
+       }
+
+       .divThree{
+        width:250px;
+        height:250px;
+        border: 3px solid black;
+        text-align: justify;
+        padding: 10px;
+        margin: 30px;
+       }
+
+       .divFour{
+        width:250px;
+        height:250px;
+        border: 3px solid black;
+        text-align: justify;
+        padding: 10px;
+        margin: 30px;
+       }
+
+       .column div{
+        float:left;
+       }
+
+       .column{
+        margin-left: 60px;
+       }
+
+       .column::after{
+        content: "";
+        clear: left;
+       }
+
+       @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+      
+
+    </style>
+    <body>
+        <div class="header">
+            <h1>Our Services</h1>
+        </div>
+
+        <diV class="column">
+            <div class="divOne">
+                <h2>Web Development</h2>
+                <p>KvonTech's web development includes creating,
+                     building & maintaining websites with web design, 
+                     publishing, programming & database management.</p>
+            </div>
+    
+            <div class="divTwo">
+                <h2>App Development</h2>
+                <p>We empower all-sized businesses to design, build, test, 
+                    migrate, optimize, and manage Android and iPhone apps 
+                    ensuring they stay up and running.</p>
+            </div>
+    
+            <div class="divThree">
+                <h2>Software Development</h2>
+                <p>We provide tailored software development services, creating 
+                    desktop applications, mobile apps, and enterprise solutions 
+                    to meet your unique business needs.</p>
+            </div>
+    
+            <div class="divFour">
+                <h2>Devops Services</h2>
+                <p>KvonTech's DevOps solutions enable agile market opportunities, 
+                    continuous deployment, and seamless scaling, reducing costs and 
+                    fostering exponential growth.</p>
+            </div>
+        </diV>
+        
+    </body>
+</html>
