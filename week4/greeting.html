@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Greeting</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"
+      />
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+      <style>
+        .answer{
+            width: 600px;
+            margin:auto;
+            height: 500px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+      </style>
+    </head>
+    <body>
+
+        <div class="container  border border-danger-subtle border-3 p-4 answer my-5" id="answer1">
+            <h1 id="result"></h1>
+            <p id="answer2"></p>
+        </div>
+
+
+
+
+
+
+
+
+        <script>
+            let date =new Date();
+            // date.setHours(22);
+            let d =date.getHours();
+
+            
+            
+            if (d > 5 && d <=12) {
+              document.getElementById("result").innerHTML = "Good morning!";
+              document.getElementById("answer1").style.backgroundImage = "url(sun.gif)";
+              document.getElementById("answer1").style.backgroundRepeat= "no-repeat";
+              document.getElementById("answer1").style.backgroundPosition= "center";
+              document.getElementById("answer2").innerHTML="May you day be as bright as the sunshine."
+            
+            }else if(d >12 && d <16){
+                document.getElementById("result").innerHTML = "Good afternoon!";
+                document.getElementById("answer1").style.backgroundImage = "url(sun2.gif)";
+              document.getElementById("answer1").style.backgroundRepeat= "no-repeat";
+              document.getElementById("answer1").style.backgroundPosition= "center";
+              document.getElementById("answer2").innerHTML="May your afternoon be blessed with pleasant surprises.";
+
+            }else if(d>=16 && d<22){
+                document.getElementById("result").innerHTML = "Good Evening!";
+                document.getElementById("answer1").style.backgroundImage = "url(sun3.gif)";
+              document.getElementById("answer1").style.backgroundRepeat= "no-repeat";
+              document.getElementById("answer1").style.backgroundPosition= "center";
+              document.getElementById("answer2").innerHTML="The evening whispers the promise of a brighter tomorrow; believe in it.";
+
+            }else{
+                document.getElementById("result").innerHTML = "Good Night!";
+                document.getElementById("answer1").style.backgroundImage = "url(sun4.gif)";
+              document.getElementById("answer1").style.backgroundRepeat= "no-repeat";
+              document.getElementById("answer1").style.backgroundPosition= "center";
+              document.getElementById("answer2").innerHTML="The best bridge between despair and hope is a good night's sleep.";
+              document.getElementById("result").style.color="white";
+              document.getElementById("answer2").style.color="white";
+            }
+            </script>
+    </body>
+</html>

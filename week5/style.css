@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --main-color:#013571;
+    --text-color: #fff;
+    
+}
+
+
+.bgColor{
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+/* NavBar */
+.navPara p{
+    margin: 8px;
+    color: var(--text-color);
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+li div{
+    width: 16px;
+    height: 16px;
+    margin: 5px;
+    border-radius: 50%;
+    border:2px solid  var(--text-color);
+}
+
+.list1 div{
+    background-color:#3F48CC;
+}
+
+.list2 div{
+    background-color:#662B41; 
+}
+
+.list3 div{
+    background-color:#70ADD2;
+}
+
+.list4 div{
+    background-color: #FFB696;
+}
+
+.themeChanger{
+    display: flex;
+    align-items: center;
+    
+}
+
+.themeChanger p{
+    color:  var(--text-color);
+    font-size: 18px;
+    margin: 2px;
+}
+
+.zoomBtn{
+    width: 25px;
+    height: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.socialMedia{
+    display: flex;
+}
+
+.ytIconContainer{
+    width: 28px;
+    height: 35px;
+    background-color: red;
+    text-align: center;
+}
+
+.fbIconContainer{
+    width: 28px;
+    height: 35px;
+    background-color:#245388;
+    margin-top:4px;
+    text-align: center;
+}
+
+
+
+/* .navSecConatiner{
+    background-color:  #013571;
+    height: min-content;
+} */
+ /* NavBar */
+
+ /* CollegeName and Logo*/
+
+ .cllgName{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+ }
+
+ .nameContainer{
+    display: flex;
+ }
+
+ .logoContainer {
+    padding: 10px;
+ }
+
+ .cllgName{
+    padding: 10px;
+ }
+/* CollegeName and Logo*/
+
+
+/* Help Section */
+
+.principalSection{
+    box-shadow: -1px 0px 4px 4px #ddd;
+}
+
+.viewMoreBtn{
+    color:var(--main-color);
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 21px;
+}
+
+
+/* .clearfix::after{
+    content: "";
+    clear:left;
+} */
+
+.principalDesk{
+    text-align: justify;
+}
+
+.noticeContainer{
+    position:relative;
+    width:100%;
+    height: 500px;
+}
+
+.noticeContainer_background,
+.overlayContainer{
+    position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.noticeContainer_background{
+    background: url(./images/BackCllg.jpeg) no-repeat;
+    background-size: 100% 500px;
+    z-index: 1;
+}
+
+.overlayContainer{
+    background-color: rgba(0,0,0,0.7);
+    z-index: 2;
+}
+
+.noticeHeading::after{
+    content:"";
+    height: 3px;
+    width: 80px;
+    background-color: red;
+    display: block;
+    margin:auto;
+}
+
+
+.noticeBoard{
+    width:fit-content;
+    background: #ffffff;
+}
+
+.noticeContent{
+    width:830px;
+    height: 200px;
+    overflow: auto;
+}
+
+.noticeBtn{
+    height:35px;
+    margin:1px;
+    text-align: center;
+}
+
+.tpo{
+    margin-right: 5px;
+}
+
+/* Panoramic Section */
+
+.panoramicHeading{
+    position: relative;
+}
+
+.panoramicHeading::after{
+    content: "";
+    height: 3px;
+    width: 80px;
+    background-color: red;
+    position: absolute;
+    left: 48%;
+    bottom:1%;
+}
+
+
+
+.featureIcon{
+    width:200px;
+    height: 125px;
+    color: var(--main-color);
+    border-radius: 50%;
+    box-shadow: rgb(221, 221, 221) 1px 2px 3px 3px;
+}
+
+.featureInfo{
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+/* .featureContainer{
+    
+    margin:0px 15px;
+} */
+
+.featureContainer:hover{
+    background-color: var(--main-color);
+    color: var(--text-color);
+
+    & .featureIcon{
+        background-color: var(--text-color);
+        color: var(--main-color);
+        box-shadow: none;
+        transform: rotateX(360deg);
+        transition: transform 0.4s;
+    }
+
+    & .viewMoreBtn{
+        color: var(--text-color);
+    }
+}
+
+/* Achievement Section */
+
+.achievementSection{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    
+}
+
+
+.achievementSection_background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: url(./images/cllgBack2.webp) ;
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+}
+
+.achievementHeading::after{
+    content: "";
+    height: 3px;
+    width: 80px;
+    margin: auto;
+    background-color: red;
+    display: block;    
+}
+
+.cardContainer{
+    width: 250px;
+}
+
+.cardImage{
+    width:auto;
+    height: 200px;
+}
+
+.cardInfo{
+    font-size:14px;
+}
+
+.nextBtn{
+    position:absolute;
+    right:3%;
+    color:#98999a;
+}
+
+/* Gallery Section */
+
+.galleryBtn{
+    width: 230px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid black;
+
+    & a{
+        color: black;
+        font-size: 25px;
+    }
+}
+
+.eventContainer{
+    width: 230px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.workshop{
+    width: 230px;
+    height: 200px;
+    background-image: url(./images/nationalWorkshop.jpg);
+    background-size: 230px 200px;
+    position:relative;
+}
+
+.janEvent{
+    width: 70px;
+    height: 75px;
+   text-align: center;
+   font-weight: bold;
+   color: white;
+   background-color: rgba(0,0,0,0.8);
+   position:absolute;
+   right:5%;
+   top:5%;
+}
+
+.bottomContainer{
+    width: 100%;
+    position: absolute;
+    bottom: 0; 
+}
+
+.bottomHeading{
+    
+    color:white;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(225, 0, 0,1);
+    
+}
+
+.bottomHeading::after{
+    content: "\f138";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 700;
+}
+
+.bottomContent{
+    background-color: black;
+    color: white;
+    text-align: justify;
+    font-size: 15px;
+    display: none;
+}
+
+.bottomContainer:hover{
+    
+    & .bottomContent{
+        display: block;
+    }
+}
+
+
+
+
+/* News Section */
+
+.newsContainer{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.newsContainer_Background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: url(./images/newsBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+}
+
+.newsHeading::after{
+    content: "";
+    height: 3px;
+    width: 80px;
+    margin:auto;
+    display: block;
+    background-color: red;
+}
+
+.newsContent{
+    width: 250px;
+    height: 220px;
+}
+
+.newsImage{
+    width: 220px;
+    height: 200px;
+}
+
+/* Recruiter Section */
+
+
+
+.recruiterHeading::after{
+    content: "";
+    height: 3px;
+    width: 80px;
+    margin:auto;
+    display: block;
+    background-color: red;
+}
+
+.recruiterContent{
+    width: 150px;
+    height: 80px;
+}
+
+/* footer Section */
+
+.footerContainer{
+    position: relative;
+    width: 100%;
+    height:auto;
+}
+
+.footerBackground,
+.footerOverlay
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    left: 0;
+    height: inherit;
+}
+
+.footerBackground{
+    background: url(./images/BackCllg.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    z-index: 1;
+}
+
+.footerOverlay{
+    background-color:rgba(0, 14, 45, 0.92);
+    z-index: 2;
+}
+
+.footerLinkHeading::after{
+    content: "";
+    height: 2px;
+    width: 170px;
+    display: block;
+    background-color: white;
+}
+
+
+

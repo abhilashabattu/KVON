@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Technical Education</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                margin: 0%;
+                box-sizing: border-box;
+            }
+
+            .child3 h1, .child4 h2{
+                color:#5B3765;
+            }
+
+            .child1{
+                grid-area: header;
+                text-align: center;
+                padding: 5px;
+                color: white;
+                background-color: #5B3765;
+            }
+
+            /* .child2{
+                grid-area:navBar;
+                text-align: center;
+                padding: 5px;
+                margin:10px;
+                background-color: #9E6999;
+            } */
+
+            .child3{
+                grid-area: main;
+                text-align: justify;
+                justify-items: start;
+                padding: 10px;
+                margin:10px;
+                letter-spacing: 1px;
+            }
+
+            .child4{
+                grid-area:rightContent;
+                border:5px solid #5B3765 ;
+                padding: 10px;
+                letter-spacing: 1px;
+                height: 100%;
+            }
+
+            a{
+                text-decoration: none;
+                padding: 20px;
+                margin-top:auto;
+                font-size: 25px;
+                color: white;
+                font-weight: bold;
+
+            }
+
+            button{
+                background-color: #5B3765;
+                padding: 10px;
+                width: 300px;
+                
+            }
+
+            .container{
+                display: grid;
+                grid-template-areas: 'header header header header header header'
+                                     'main main main main rightcontent rightContent';
+                row-gap:50px;
+                column-gap:20px;
+                padding: 12px;
+            }
+
+            @media only screen and (max-width: 600px) {
+                .container{
+                    grid-template-areas:'header header header header header header'
+                                        'main main main main main main'
+                                        'rightContent rightContent rightContent rightContent rightContent rightContent ';
+                }
+
+                a{
+                    padding: 5px;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="child1">
+                <h1>Technical EduHub</h1>
+                <br><br>
+                <ul>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+                </ul>
+            </div>
+<!-- 
+            <div class="child2">
+                <nav>
+                    
+                </nav>
+            </div> -->
+
+            <div class="child3">
+                <h1>Technical EduHub</h1>
+                <p>Unlock the world of Coding with every lesson</p><br>
+                <p>Welcome to our Computer Language Learning Hub, where coding meets creativity!
+                   Whether you're a beginner just starting your programming journey or an experienced 
+                   developer looking to sharpen your skills, we provide comprehensive resources to help 
+                   you master popular programming languages. From foundational languages like Python and 
+                   JavaScript to more advanced tools like C++ and Ruby, our interactive lessons, tutorials, 
+                   and exercises are designed to make learning fun and effective. Dive in and start your path 
+                   to becoming a proficient coder today!</p><br>
+                <p>Unlock the world of programming with our comprehensive courses designed
+                    for all skill levels. Whether you're a beginner or looking to level up,
+                    our interactive lessons and hands-on projects will help you master languages
+                    like Python, JavaScript, and more. Start building real-world skills and gain
+                    the confidence to code like a pro!</p><br><br>
+                
+               <button><a href="position.html">Explore With Us</a></button>
+
+            </div>
+
+            <div class="child4">
+                <h2>Popular Programming Languages</h2><br>
+                <p><strong>Python:</strong> Ideal for beginners and widely used in web development, data science, and automation.<br><br>
+                    <strong>JavaScript:</strong> The cornerstone of web development, enabling interactive websites and front-end functionality.<br><br>
+                    <strong>Java:</strong> A versatile language for building cross-platform applications, from mobile to enterprise software.<br><br>
+                    <strong>C++:</strong> Known for high-performance applications, commonly used in system programming and game development.<br><br>
+                    <strong>Ruby:</strong> A beginner-friendly language with a focus on simplicity and productivity, often used in web development.<br><br>
+                </p>
+            </div>
+
+        </div>
+    </body>
+</html>

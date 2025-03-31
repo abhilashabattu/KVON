@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transition</title>
+        <style>
+
+            /* Transition Start */
+           
+
+            .divTransform div{
+                float:left;
+                margin:4%;
+                font-size: 22px;
+                text-align: center;
+            }
+
+            .translate{
+                width:200px;
+                height: 150px;
+                border: 1px solid black;
+                margin:2%;
+                transition: width height 2s;
+            }
+
+            .translate:hover{
+                background-color: powderblue;
+                transform:translate(10px, 15px)
+            }
+
+            .rotate{
+                width:200px;
+                height: 150px;
+                border: 1px solid black;
+                margin:2%;
+                transition: transform 3s;
+            }
+
+            .rotate:hover{
+                background-color: darkcyan;
+                transform: rotate(360deg);
+            }
+
+            .scale{
+                width:200px;
+                height: 150px;
+                border: 1px solid black;
+                margin:2%;
+                transition:transform 3s;
+            }  
+
+            .scale:hover{
+                background-color: pink;
+                transform: scale(2,2);
+            }
+
+            .matrix{
+                width:200px;
+                height: 150px;
+                border: 1px solid black;
+                margin:2%;
+                transition:transform 1s;  
+            }
+
+            .matrix:hover{
+                background-color: darkmagenta;
+                transform: matrix(1, -0.3, 0, 1, 0, 0);
+            }
+
+            .divTransform::after{
+                content: "";
+                clear: both;
+                display:table ;
+            }
+            /* Transition Ends */
+
+            /* Animation Start */
+
+            .anima1{
+                width: 100px;
+                height: 100px;
+                position: relative;
+                border: 1px solid black;
+                animation-name:example;
+                animation-duration: 3s;
+            }
+
+            @keyframes example {
+                0%{
+                    width: 50px;
+                    height: 50px;
+                    left:0px; top:0px;
+                    background-color: rgb(213, 182, 241);
+                }
+                25%{
+                    width: 80px;
+                    height: 80px;
+                    left:200px; top:0px;
+                    background-color: rgb(161, 110, 208);
+                }
+                50%{
+                    width: 100px;
+                    height: 100px;
+                    left:200px; top:100px;
+                    background-color: rgb(159, 64, 249);
+                }
+                75%{
+                    width: 80px;
+                    height: 80px;
+                    left:0px; top:100px;
+                    background-color: rgb(161, 110, 208);
+                }
+                100%{
+                    width: 50px;
+                    height: 50px;
+                    left:0px; top:0px;
+                    background-color: rgb(213, 182, 241);
+                }
+
+            }
+
+
+            @media screen and (max-width: 600px) {
+            .divTransform {
+                width: 100%;
+            }
+        }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Transition</h1>
+        <div class="divTransform">
+            <div class="translate tr">Translate</div>
+            <diV class="rotate">Rotate</diV>
+            <div class="scale">Scale</div>
+            <div class="matrix">Matrix</div>
+        </div>
+        <br><br>
+        <hr>
+        <h1>Animation</h1>
+            <div class="anima1"></div>
+        
+        
+    </body>
+</html>

@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text-666666 {
+    color: #666666;
+}
+
+/* Heading Section */
+
+.logoImage {
+    height: 75px;
+}
+
+.headingContainer {
+    background-color: #134080;
+}
+
+.headingSubTitle {
+    font-size: 12px;
+}
+
+/* Banner Section */
+
+.bannerSection{
+    position:relative;
+}
+
+.bannerSectionLink{
+    width:30px;
+    position:absolute;
+    top:40px;
+    right:0;
+}
+
+
+/* Hear Them Speak Section Start */
+
+.hearThemSpeakSection {
+    background-color: rgba(178, 206, 248, 0.3);
+   
+}
+
+
+/* Form Section */
+
+.bg-EFF1F4{
+    background-color: #EFF1F4;
+}
+
+.bg-000066{
+    background-color: #000066;
+}
+
+/* Footer Section Start */
+
+.bg-000066 {
+    background-color: #000066;
+}
+
+.footerIcon {
+    width: 28px;
+    height: 28px;
+}
+
+.footerLink {
+    font-size: 13px;
+}
+
+.applyNowSection{
+    position: relative;
+    top:50px;
+}
+
+.footerBottom{
+    padding-top: 70px;
+        /* Creates space for yellow box */
+        
+}
+
+
+/* @media screen and (min-width:992px) {
+
+    .applyNowSection {
+
+        top: -320px;
+
+    }
+
+    .footerContent {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    .applyNowSection {
+            
+        top: -280px;
+        left: 20px;
+    }
+
+    .footerContent {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .applyNowSection {
+        top:-350px;
+        left: 20px;
+    }
+
+    .footerContent {
+        margin-top: 325px;
+    }
+} 
+
+@media screen and (max-width:576px) {
+
+    .applyNowSection {
+        top:-300px;
+        left: 5px;
+    }
+
+    .footerContent {
+        margin-top: 300px;
+    }
+} */
+
+

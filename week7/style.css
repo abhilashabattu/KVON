@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.text-666666{
+    color:#666666;
+}
+
+/* Heading Section */
+
+.logoImage{
+    height: 75px;
+}
+
+.headingContainer{
+    background-color:#134080;
+}
+
+.headingSubTitle{
+    font-size:14px;
+}
+
+/* Banner Section */
+
+.bannerContainer{
+    background-image:url("./images/Banner.png");
+}
+
+/* Computer Science Section */
+
+.color-3052A1{
+    color:#3052A1;
+}
+
+.announcementContainer{
+    height: 420px;
+}
+
+.eventDate{
+    font-size:12px;
+}
+
+.eventContent{
+    font-size:1px;
+}
+
+
+
+/* Our Blogs Section Start*/
+
+.cardContainer{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    width:300px;
+}
+
+.text-darkBlue{
+    color:darkblue;
+}
+
+/* Hear Them Speak Section Start */
+
+.hearThemSpeakSection{
+    background-color: rgba(178, 206, 248,0.3);
+}
+
+
+/* Footer Section */
+
+
+
+.footerLinkContainer{
+    background-color: #000066;
+    margin-top: 400px;
+    position: relative;
+}
+
+.applyNowSection{
+    z-index: 2;
+    position: absolute;
+    top: -280px;
+    right: 100px;
+}
+
+.footerFontSize{
+    font-size: 13px;
+}
+
+.footerCllgHeading{
+    font-size: 18px;
+}
+
+.footerSubtitle{
+    font-size: 11px;
+}
+.footerLogo{
+    width: 38px;
+    height: 40px;
+}
+
+.footerImage{
+    width: 28px;
+}
+
+.socialMediaBtn{
+    width: 25px;
+    height: 25px;
+}
+
+
+

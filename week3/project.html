@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width:device-width, initial-scale:1.0">
+
+        <style>
+
+            *{
+                margin: 0%;
+                box-sizing: border-box;
+            }
+
+            .headerLink{
+                text-decoration: none;
+                float: right;
+                font-size: 23px;
+                margin: 10px;
+                padding: 12px;
+                color: black;
+                font-weight: 900;
+            }
+
+            .container{
+                display: grid;
+                grid-template-areas:'header header header header header'
+                                    'home home home home home'
+                                    'about about about about about'
+                                    'services services services services services'
+                                    'footer footer footer footer footer';
+            }
+
+            .child1 {
+                grid-area: header;
+                padding: 12px;
+            }
+            
+            .child2{
+                grid-area: home;
+                background-image: url('myBackground.jpg');
+                width: 100%;
+                height: 100vh;
+                background-attachment: fixed;
+                padding: 20px;
+            }
+
+            .child3{
+                grid-area: about;
+                padding: 10px;
+                margin: 20px;
+            }
+
+            .child4{
+                grid-area: services;
+                padding: 10px;
+               margin: 12px;
+            }
+
+            .child5{
+                grid-area: footer;
+                /* position:relative; */
+                /* top: 90px; */
+            }
+
+            .whiteBox{
+                padding: 12px;
+                box-shadow: rgba(60,64,67,0.3) 0px 1px 2px 0px , rgba(60,64,67,0.15) 0px 2px 6px 2px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                z-index: 1;
+                width:650px;
+                height: 300px;
+                position:relative;
+                top:350px;
+                background: white;
+            }
+
+            .foot1{
+                width: 700px;
+                margin: 0 auto;
+                height: 500px;
+                /* top:-176px; */
+                z-index: 1;
+            }
+
+            .foot2{
+                background-color: black;
+                color: white;
+                padding: 12px;
+                display: flex;
+                justify-content: space-around;
+                align-items:self-end;
+                width: 100%;
+                height: 400px;
+            }
+
+            .footerLink{
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+            }
+
+            .abtHeading {
+                padding: 10px;
+                margin: 12px;
+            }
+
+            .serviceHeading{
+                padding: 10px;
+                margin: 12px;
+            }
+
+            .servicesDetails{
+                width: 300px;
+                height: 300px;
+                border: 1px solid black;
+                border-radius: 8px;
+                padding: 10px;
+                margin: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items:center;
+            }
+
+            .servicesDetails:hover{
+                border: none;
+                box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+            }
+
+            .abtDetails{
+                width: 300px;
+                height: 300px;
+                border: 1px solid black;
+                border-radius: 8px;
+                padding: 10px;
+                margin: 12px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                transition: width 2s;
+            }
+
+            .abtDetails:hover{
+                transform: scale(1.1);
+            }
+           
+            img{
+                transition: transform 1s;
+            }
+
+            img:hover{
+                transform: rotate(360deg);
+            }
+
+            .abtContent{
+                display: flex;
+                justify-content: space-evenly;
+                align-content: space-around;
+            }
+
+            .serviceContent{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .abtPara{
+                letter-spacing: 1px;
+                text-align: justify;
+            }
+
+            .servicePara{
+                letter-spacing: 1px;
+                text-align: justify;
+                padding: 5px;
+            }
+
+           
+            
+
+            .homeText{
+                text-align: center;
+                position: relative;
+                top: 30%;
+                font-size: 22px;
+                color: white;
+            }
+
+            
+            @media screen and (max-width: 1000px) {
+                .abtContent{
+                    flex-wrap: wrap;
+                }
+            }
+            
+            button{
+                background-color: black;
+                color: white;
+                font-weight: 700;
+                padding: 5px;
+                margin: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+            <!-- Header -->
+
+            <div class="child1">
+                <a href="#" class="headerLink">Home</a>    
+                <a href="#" class="headerLink">About</a>    
+                <a href="#" class="headerLink">Projects</a>   
+                <a href="#" class="headerLink">Contact</a>   
+            </div>
+
+            <!-- Home Page -->
+            <div class="child2">
+                <div class="homeText">
+                    <h1>Technical EduHub</h1>
+                    <p>Unlock the world of Coding with every lesson</p><br>
+                    <p>Welcome to our Computer Language Learning Hub, where coding meets creativity!
+                    Whether you're a beginner just starting your programming journey or an experienced 
+                    developer looking to sharpen your skills, we provide comprehensive resources to help 
+                    you master popular programming languages. From foundational languages like Python and 
+                    JavaScript to more advanced tools like C++ and Ruby, our interactive lessons, tutorials, 
+                    and exercises are designed to make learning fun and effective. Dive in and start your path 
+                    to becoming a proficient coder today!</p><br>
+                
+                </div>
+            </div>
+
+            <!-- About Page -->
+             <div class="child3">
+                <div class="abtHeading">
+                    <h1>About Technical EduHub</h1>
+                    <p>Guiding your learning journey through Research, Design and Development exellence.</p>
+                </div>
+
+                <div class="abtContent">
+                    <div class="abtDetails">
+                        <img src="C:\Users\Abhilasha\Pictures\research.jpg" alt="design" width="110px;" height="110px;">
+                        <h3>Research</h3>
+                        <p class="abtPara">
+                            We start by learning what you need. We look at what's new and exciting in learning
+                            and choose topics that match what you want to learn.
+                        </p>
+                    </div>
+    
+                    <div class="abtDetails">
+                        <img src="C:\Users\Abhilasha\Pictures\design.webp" alt="design" width="110px;" height="110px;">
+                        <h3>Design</h3>
+                        <p class="abtPara">
+                            Next, we make the lessons. We make them fun and interestinf for you. 
+                            We make sure they work for different ways people like to learn.
+                        </p>
+                    </div>
+    
+                    <div class="abtDetails">
+                        <img src="C:\Users\Abhilasha\Pictures\development.jpg" alt="design" width="110px;" height="110px;">
+                        <h3>Development</h3>
+                        <p class="abtPara">
+                            After that, we turn the lessons into things you can use online. We use 
+                        the latest tools to mae sure they work well and make you happy.
+                        </p>
+                    </div>
+
+                </div>
+             </div>
+
+             <!-- Services -->
+              <div class="child4">
+                <div class="serviceHeading">
+                    <h1>Our Services</h1>
+                </div>
+
+
+                <div class="serviceContent">
+                    <div class="servicesDetails">
+                        <h2>Python</h2>
+                        <img src="C:\Users\Abhilasha\Downloads\python.webp" width="100px;" height="100px;">
+                        <p class="servicePara">Python is a beginner-friendly, versatile programming language known for its simple syntax and 
+                            wide applications in web development, data science, and automation.
+                        </p>
+                    </div>
+    
+                    <div class="servicesDetails">
+                        <h2>Java</h2>
+                        <img src="C:\Users\Abhilasha\Downloads\java-removebg-preview.png" width="110px;" height="110px;">
+                        <p class="servicePara">Java is a widely-used, object-oriented programming language known for its portability across platforms 
+                            and strong performance.
+                        </p>
+                    </div>
+    
+                    <div class="servicesDetails">
+                        <h2>C++</h2>
+                        <img src="C:\Users\Abhilasha\Downloads\c++-removebg-preview.png" width="100px;" height="90px;">
+                        <p class="servicePara">C++ is a powerful, high-performance programming language used for system/software development and 
+                            game programming. It supports object-oriented, procedural, and generic programming paradigms.
+                        </p>
+                    </div>
+    
+                    <div class="servicesDetails">
+                        <h2>HTML</h2>
+                        <img src="C:\Users\Abhilasha\Downloads\html-removebg-preview.png" width="100px;" height="100px;">
+                        <p class="servicePara">HTML is the standard language used to create and structure content on the web. 
+                            It forms the foundation of web pages, defining elements like text, images, links, and multimedia.
+                        </p>
+                    </div>
+    
+                    <div class="servicesDetails">
+                        <h2>CSS</h2>
+                        <img src="C:\Users\Abhilasha\Downloads\css-removebg-preview.png" width="100px;" height="100px;">
+                        <p class="servicePara">CSS (Cascading Style Sheets) is used to style and design the layout of web pages. It controls 
+                            the appearance of HTML elements, including colors, fonts, spacing, and positioning.
+                        </p>
+                    </div>
+    
+                    <div class="servicesDetails">
+                        <h2>JavaScript</h2>
+                        <img src="C:\Users\Abhilasha\Downloads\JavaScript-logo.png" width="90px;" height="90px;">
+                        <p class="servicePara">JavaScript is a dynamic programming language used to create interactive and responsive web pages. 
+                            It enables features like animations, form validation, and real-time updates on websites.
+                        </p>
+                    </div>
+
+                    <div class="servicesDetails">
+                        <h2>SQL</h2>
+                        <img src="C:\Users\Abhilasha\Downloads\sql.png" width="160px;" height="100px;">
+                        <p class="servicePara">SQL (Structured Query Language) is used to manage and manipulate relational databases. It 
+                            allows you to retrieve, insert, update, and delete data in a database efficiently.
+                        </p>
+                    </div>
+                </div>
+                
+                
+              </div>
+
+              <!-- Footer -->
+
+              <div class="child5">
+                    
+                    <div class="foot1">
+                        <div class="whiteBox">
+                            <div class="leftPart">
+                                <h1>Let's <br>revolutionarize <br>the way you study</h1>
+                                <p style="letter-spacing: 1px;">Join our free bootcamps to know us better.</p>
+                                <br>
+                                <button>Start Now</button>
+                            </div>
+                            <div class="rightPart">
+                                <img src="C:\Users\Abhilasha\Downloads\main-removebg-preview (1).png" width="200px;" height="200px;">
+                            </div> 
+                            
+                        </div>
+                    </div>
+                    <div class="foot2">
+                        <div>
+                            <h3>Technical EduHub</h3>
+                            <p>Lets revolutionarize <br>the way you study</p>
+                        </div>
+                        <div >
+                                <h2>Courses</h2>
+                                <a href="#" class="footerLink">Python</a><br>
+                                <a href="#" class="footerLink">Java</a><br>
+                                <a href="#" class="footerLink">C++</a><br>
+                                <a href="#" class="footerLink">HTML</a><br>
+                                <a href="#" class="footerLink">CSS</a><br>
+                                <a href="#" class="footerLink">JavaScript</a><br>
+                        </div>
+    
+                        <div>
+                                <h2>Links</h2>
+                                <a href="#" class="footerLink">Python</a><br>
+                                <a href="#" class="footerLink">Java</a><br>
+                                <a href="#" class="footerLink">C++</a><br>
+                                <a href="#" class="footerLink">HTML</a><br>
+                                <a href="#" class="footerLink">CSS</a><br>
+                                <a href="#" class="footerLink">JavaScript</a><br>
+                        </div>
+    
+                        <div >
+                                <h2>Blogs</h2>
+                                <a href="#" class="footerLink">Python</a><br>
+                                <a href="#" class="footerLink">Java</a><br>
+                                <a href="#" class="footerLink">C++</a><br>
+                                <a href="#" class="footerLink">HTML</a><br>
+                                <a href="#" class="footerLink">CSS</a><br>
+                                <a href="#" class="footerLink">JavaScript</a><br>
+                        </div>
+                    </div>
+                        
+                
+              </div>
+
+        </div>
+    </body>
+</html>

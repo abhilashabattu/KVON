@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>Bootstrap</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"
+      />    
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <style>
+
+            *{
+                box-sizing: border-box;
+            }
+
+            
+
+           /* @media (min-width:768px){
+            .breakpoint{
+                display: none;
+            }
+           } */
+
+           
+
+           .clearRight::after{
+            content: "";
+            clear: both;
+            display: table;
+           }
+           
+
+            
+            @include media-breakpoint-up(md){
+                .breakpoint {
+                    display: none;
+                }
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="container-fluid p-4 my-2 ">
+            <h1>Bootstrap</h1>
+            <div class="row p-4 border bg-dark text-white my-5 ">
+                
+                <p><h2>Advantages of Bootstrap:</h2>
+
+                <strong>Easy to use:</strong> Anybody with just basic knowledge of HTML and CSS can start using Bootstrap<br><br>
+                <strong>Features:</strong>  Bootstrap's responsive CSS adjusts to phones, tablets, and desktops<br><br>
+                <strong>Approach:</strong> In Bootstrap, mobile-first styles are part of the core framework<br><br>
+                <strong>Browser compatibility:</strong> Bootstrap 5 is compatible with all modern browsers (Chrome, Firefox,
+                                        Edge, Safari, and Opera). Note that if you need support for IE11 and 
+                                        down, you must use either BS4 or BS3.<br><br>
+                </p>
+        
+            </div>
+            
+            <br><br>
+        
+            <div class="row my-3">
+                <div class="col-sm-6 p-3 border "><strong>Easy to use:</strong> Anybody with just basic knowledge of HTML and CSS can start using Bootstrap<br></div>
+                <div class="col-sm-6 p-3 border "><strong>Features:</strong>  Bootstrap's responsive CSS adjusts to phones, tablets, and desktops<br></div>
+
+            </div>
+            
+            
+        
+            <div class="row my-3">
+                <div class="col-sm-6 p-3 border border-dander"><strong>Approach:</strong> In Bootstrap, mobile-first styles are part of the core framework<br></div>
+                <div class="col-sm-6 p-3 border border-dander"><strong>Browser compatibility:</strong> Bootstrap 5 is compatible with all modern browsers (Chrome, Firefox,
+                    Edge, Safari, and Opera).</div>
+            </div>
+        
+
+        
+            <div class="row my-3">
+                <div class="col-sm-6 p-3 border border-dander"><span class="mark">This is mark text.</span><br><br>
+                                                 Use <kbd>ctrl + p</kbd> to print dialog box.</div>
+                <div class="col-sm-6 p-3 border border-dander"><span class="abbr">This text contains abbr tag.</span><br><br>
+                                                <pre>Use pre tag to     reserve spaces.</pre></div>
+            </div>
+       
+
+            <br><br>
+
+            <div class="col p-3 my-3 border ">
+                <h2>Blockquote</h2>
+                <blockquote class="blockquote">For 50 years, <abbr title="World Wildlife Fund">WWF</abbr> has been protecting the future of nature. The world's leading conservation organization, 
+                    <abbr title="World Wildlife Fund">WWF</abbr> works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</blockquote>
+            </div>
+
+
+            <br><br>
+
+            <div class="border p-2 my-3" >
+                <h2>Descriptive List</h2>
+                <dl class="dl">
+                <dt>Coffee</dt>
+                <dd>- black hot drink</dd>
+                <dt>Milk</dt>
+                <dd>- white cold drink</dd>
+                </dl>
+            </div>
+    
+
+            <br><br>
+            <div class="border p-2 my-3">
+                <h2>Text Colors</h2>
+                <p class="text-muted">This para is Muted.</p>
+                <p class="text-primary">This para is primary.</p>
+                <p class="text-warning">This para indicates warning.</p>
+                <p class="text-info">This para represents some information.</p>
+                <p class="text-success">This para represents success.</p>
+                <p class="text-danger">This para indicates danger.</p>
+                <p class="text-secondary">This is a secondary paragraph.</p>
+                <p class="text-dark">This para has dark text.</p>
+                <p class="text-body">This para has default body color.</p>
+                <p></p>
+            </div>
+        
+
+            <br><br>
+
+            <div class="border p-2 my-3">
+                <h2>Tables</h2><br>
+                <table class="table table-bordered table-hover">
+                
+                    <thead class="table-success">
+                        <tr>
+                            <th>S.no</th>
+                            <th>Intern Name</th>
+                            <th>Domain</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Abhilasha</td>
+                            <td>Web Development</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Anshul</td>
+                            <td>Web Development</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Gungun</td>
+                            <td>Web Development</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Naman</td>
+                            <td>Web Development</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Shradha</td>
+                            <td>Web Development</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <br><br>
+
+            <div class="p-3 my-2 border" >
+                <h2>Background Color</h2>
+                <div class="p-4 my-1 bg-primary-subtle border border-primary-subtle rounded-3">
+                    <p><strong>Easy to use:</strong> Anybody with just basic knowledge of HTML and CSS can start using Bootstrap<br><br>
+                        <strong>Features:</strong>  Bootstrap's responsive CSS adjusts to phones, tablets, and desktops<br><br>
+                        <strong>Approach:</strong> In Bootstrap, mobile-first styles are part of the core framework<br><br>
+                        <strong>Browser compatibility:</strong> Bootstrap 5 is compatible with all modern browsers (Chrome, Firefox,
+                                                Edge, Safari, and Opera). Note that if you need support for IE11 and 
+                                                down, you must use either BS4 or BS3.<br>
+                    </p>
+                </div>
+
+                <div class="p-4 my-1 bg-success-subtle border border-success-subtle rounded-3">
+                    <p><strong>Easy to use:</strong> Anybody with just basic knowledge of HTML and CSS can start using Bootstrap<br><br>
+                        <strong>Features:</strong>  Bootstrap's responsive CSS adjusts to phones, tablets, and desktops<br><br>
+                        <strong>Approach:</strong> In Bootstrap, mobile-first styles are part of the core framework<br><br>
+                        <strong>Browser compatibility:</strong> Bootstrap 5 is compatible with all modern browsers (Chrome, Firefox,
+                                                Edge, Safari, and Opera). Note that if you need support for IE11 and 
+                                                down, you must use either BS4 or BS3.<br>
+                    </p>
+                </div>
+                
+                <div class="p-4 my-1 bg-danger-subtle border border-danger-subtle rounded-3">
+                    <p><strong>Easy to use:</strong> Anybody with just basic knowledge of HTML and CSS can start using Bootstrap<br><br>
+                        <strong>Features:</strong>  Bootstrap's responsive CSS adjusts to phones, tablets, and desktops<br><br>
+                        <strong>Approach:</strong> In Bootstrap, mobile-first styles are part of the core framework<br><br>
+                        <strong>Browser compatibility:</strong> Bootstrap 5 is compatible with all modern browsers (Chrome, Firefox,
+                                                Edge, Safari, and Opera). Note that if you need support for IE11 and 
+                                                down, you must use either BS4 or BS3.<br>
+                    </p>
+                </div>
+                
+            </div>
+
+
+            <br><br>
+            <div class="p-4 my-2 border dropdown" >
+                <h2>DropDown</h2>
+                <button class="btn btn-success border border-success  dropdown-toggle" data-bs-toggle="dropdown" data-bs-theme="light" >DropDown</button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">Home</li>
+                    <li class="dropdown-item">About</li>
+                    <li class="dropdown-item">Services</li>
+                    <li class="dropdown-item">Contact</li>
+                </ul>
+
+                <button class="btn btn-success border border-success  dropdown-toggle" data-bs-toggle="dropdown" data-bs-theme="dark">DropDown</button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">Home</li>
+                    <li class="dropdown-item">About</li>
+                    <li class="dropdown-item">Services</li>
+                    <li class="dropdown-item">Contact</li>
+                </ul>
+            </div>
+
+
+            <div class="p-4 my-4 border border-danger breakpoint">
+                <hr><br><br>
+                <h1>Breakpoint</h1>
+                <p>This para is displayed in the range of medium breakpoint</p>
+            </div>
+
+            <div class="row my-5 border border-danger">
+                <div class="col-xl-6 p-3 border">Col-xl-6</div>
+                <div class="col-xl-6 p-3 border">Col-xl-6</div>
+            </div>
+
+            <div class="row row-cols-2 row-cols-lg-3 my-5 border border-danger">
+                <div class="col border p-3">row-column-2</div>
+                <div class="col border p-3">row-column-2</div>
+                <div class="col border p-3">row-column-2</div>
+                <div class="col border p-3">row-column-2</div>
+                <div class="col border p-3">row-column-2</div>
+                <div class="col border p-3">row-column-2</div>
+            </div>
+
+            <br><br>
+
+            <div class="row border border-danger my-5 " style="height: 200px;">
+                <h1>Vertical Alignment</h1>
+                <div class="col align-self-start border p-3">Vertical Center align</div>
+                <div class="col align-self-center border p-3">Vertical Center align</div>
+                <div class="col align-self-end border p-3">Vertical Center align</div>
+            </div>
+
+            <br><br>
+
+            <div class=" row border border-danger">
+                <h1>horizontal Alignment</h1>
+
+                <div class="row justify-content-center">
+                    <div class="col-4 border border-success my-2 p-2">Justify content CENTER</div>
+                    <div class="col-4 border border-success my-2 p-2">Justify content CENTER</div>
+                </div>
+
+                <div class="row justify-content-start">
+                    <div class="col-4 border border-success my-2 p-2">Justify content START</div>
+                    <div class="col-4 border border-success my-2 p-2">Justify content START</div>
+                </div>
+
+                <div class="row justify-content-end">
+                    <div class="col-4 border border-success my-2 p-2">Justify content END</div>
+                    <div class="col-4 border border-success my-2 p-2">Justify content END</div>
+                </div>
+
+                <div class="row justify-content-evenly">
+                    <div class="col-4 border border-success my-2 p-2">Justify content EVENLY</div>
+                    <div class="col-4 border border-success my-2 p-2">Justify content EVENLY</div>
+                </div>
+
+                <div class="row justify-content-between">
+                    <div class="col-4 border border-success my-2 p-2">Justify content BETWEEN</div>
+                    <div class="col-4 border border-success my-2 p-2">Justify content BETWEEN</div>
+                </div>
+            </div>
+            
+            <br><br>
+            <div class="border border-success my-5 p-3">
+                <p class="display-1">This text represents display-1</p>
+                <p class="display-2">This text represents display-2</p>
+                <p class="display-3">This text represents display-3</p>
+                <p class="display-4">This text represents display-4</p>
+                <p class="display-5">This text represents display-5</p>
+                <p class="display-6">This text represents display-6</p>
+            </div>
+
+            <div class="border border-success my-5 p-3">
+                <h2>Lead</h2>
+                <p>This para represents lead class. The LEAD class is use to make the content stand out.</p>
+            </div>
+
+            <div class="clearRight border my-5 p-3">
+                <h2>Image</h2>
+                <img class=" rounded float-start" src="C:\Users\Abhilasha\Downloads\FortChittor.jpg" width="300px" height="250px">
+                <img class=" rounded float-end" src="C:\Users\Abhilasha\Downloads\FortChittor.jpg" width="300px" height="250px">
+            </div>
+
+            <h2>Accordian</h2>
+            <div class="accordion  my-4">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Accordion Item #1
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="border my-4 p-3">
+                <h2>Alert</h2>
+                <div class="alert alert-success" role="alert">
+                    This is an Success alert.
+                </div>
+                <div class="alert alert-danger" role="alert">
+                    This is an danger alert.
+                </div><div class="alert alert-secondary mb-5" role="alert">
+                    This is an Secondary alert.
+                </div>
+
+                <h2>Alert Link</h2>
+                <div class="alert alert-success" role="alert">
+                    This is an <a href="#" class="alert-link">Success</a> alert.
+                </div>
+                <div class="alert alert-danger" role="alert">
+                    This is an <a href="#" class="alert-link">Danger</a> alert.
+                </div>
+                <div class="alert alert-secondary mb-5" role="alert">
+                    This is an <a href="#" class="alert-link">Secondary</a> alert.
+                </div>
+
+                <h2>Icons</h2>
+                <div class="alert alert-primary d-flex align-items-center" role="alert">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+                        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+                    <div>This is an primary alert with icon.</div>
+                </div>
+
+                <div class="alert alert-warning d-flex align-items-center mb-5" role="alert">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+                        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>
+                    <div>This is an warning alert with icon.</div>
+                </div>
+
+                <h2>Dismissing</h2>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    Close
+                    <button class="btn btn-close"></button>
+                </div>
+            </div>
+
+            <div class="border my-4 p-3">
+                <h2>Badges</h2>
+                <div class="mb-4">
+                    This is an example of <span class="badge bg-secondary">Badge</span>
+                </div>
+
+                
+                <h2>Buttons</h2>
+                <button class="btn btn-primary mb-4">Messages
+                    <span class="badge bg-primary-subtle" style="color: black;">5</span>
+                </button>
+
+                <h2>Positioned</h2>
+                <div class="btn btn-primary position-relative mt-1">
+                    Messages<span class="position-absolute top-0 start-100 badge translate-middle bg-danger">90+</span>
+                </div>
+            </div>
+            
+            <div class="border my-4 p-3">
+                <h2>Buttons</h2>
+                <button class="btn mx-3">Default Button</button>
+                <button class="btn btn-outline-warning mx-3">Outline Button</button>
+                <button class="btn btn-warning mx-3" disabled>Disabled Button</button>
+                <a href="" class="btn btn-warning disabled mx-3" role="button" aria-disabled="true">&lt;a&gt; Button</a>
+                <button type="button" class="btn btn-primary active " data-bs-toggle="button" autocomplete="off" aria-pressed="true">Active toggle button</button>
+
+                <br><br><br>
+                <h2>Button Group</h2>
+                <div class="btn-group mx-4">
+                    <button type="button" class="btn btn-secondary">Button 1</button>
+                    <button type="button" class="btn btn-secondary">Button 2</button>
+                    <button type="button" class="btn btn-secondary">Button 3</button>
+                </div>
+
+                <div class="btn-group mx-4">
+                    <button type="button" class="btn btn-outline-primary">Button 1</button>
+                    <button type="button" class="btn btn-outline-primary">Button 1</button>
+                    <button type="button" class="btn btn-outline-primary">Button 1</button>
+                </div>
+
+                <br><br><br>
+                <h2>Radio Button</h2>
+                <div class="btn-group" role="group" >
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1"  >
+                    <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" >
+                    <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" >
+                    <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
+                  </div>
+            </div>
+            
+            <div class="border my-4 p-3">
+                <h1>Card</h1>
+                <div class="card mb-4" style="width:300px;">
+                    <div class="card-header">HTML</div>
+
+                    <img class="card-img-top"  src="C:\Users\Abhilasha\Pictures\main.jpg" height="200px;" width="150px;">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML</h5>
+                        <p class="card-text"><strong>Easy to use:</strong> Anybody with just basic knowledge of HTML and CSS can start using Bootstrap
+                            <strong>Features:</strong>  Bootstrap's responsive CSS adjusts to phones, tablets, and desktops</p>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-header"><h5>Card 1</h5></div>
+                            <div class="card-body">
+                                
+                                <p>A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content,
+                                     contextual background colors, and powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels,
+                                      wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.</p>
+                                <a href="#" class="btn btn-primary">Click Me</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-header"><h5>Card 2</h5></div>
+                            <div class="card-body">
+                                
+                                <p>A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content,
+                                     contextual background colors, and powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels,
+                                      wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.</p>
+                                <a href="#" class="btn btn-primary">Click Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+           
+            
+            <div class="border my-4 p-3">
+                <h2>Pagination</h2>
+
+                <nav>
+                    <ul class="pagination justify-content-start">
+                        <li class="page-item"><a href="" class="page-link">Previous</a></li>
+                        <li class="page-item"><a href="" class="page-link">1</a></li>
+                        <li class="page-item"><a href="" class="page-link">2</a></li>
+                        <li class="page-item"><a href="" class="page-link">3</a></li>
+                        <li class="page-item"><a href="" class="page-link">Next</a></li>
+                    </ul>
+                </nav>
+
+                <nav>
+                    <ul class="pagination justify-content-start">
+                        <li class="page-item disabled"><a href="" class="page-link" >Previous</a></li>
+                        <li class="page-item"><a href="" class="page-link">1</a></li>
+                        <li class="page-item"><a href="" class="page-link">2</a></li>
+                        <li class="page-item"><a href="" class="page-link">3</a></li>
+                        <li class="page-item"><a href="" class="page-link">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        
+        </div>
+
+
+        
+        
+    </body>
+</html>

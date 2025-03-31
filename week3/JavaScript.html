@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <button id="bt1">Click</button>
+        <p id="para1"></p>
+
+
+        <script>
+            class car{
+                 
+                constructor(brand){
+                    this.brand=brand;
+                    
+                }
+
+                present(){
+                    return "I have " + this.brand;
+                }
+            }
+
+            class modal extends car{
+                constructor(brand,year){
+                    super(brand);
+                    this.year = year;
+                }
+
+                display(){
+                    let d = new Date();
+                    let myYear = d.getFullYear() - this.year;
+                    return this.present() + " age is : " + myYear;
+                }
+            }
+
+            let car1 = new modal("Audi",2022);
+            console.log(car1.display());
+
+            document.getElementById("bt1").addEventListener("click" , add(4,5,show));
+
+            function show(some){
+                console.log(some);
+            }
+
+            function add(num1,num2,callback){
+                let sum = num1+num2;
+                callback(sum);
+            }
+
+            let result = add(4,5,show);
+
+           function addition(a,b){
+            console.log(a+b);
+           }
+
+           function example(a,b,callback){
+            return addition(a,b);
+           }
+            
+           example(4,4,addition);
+
+           let myPromise = new Promise((resolve, reject)=>{
+               resolve("Abhilasha");
+           })
+        </script>
+    </body>
+</html>

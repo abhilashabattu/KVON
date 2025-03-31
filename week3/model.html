@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modal</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"
+      />
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+      <style>
+        *{
+            box-sizing: border-box;
+        }
+
+      </style>
+    </head>
+    <body>
+        
+
+
+        <div class="container-fluid p-5">
+
+        <h2>Modal</h2>
+        <br>
+        <button type="button" class="btn btn-outline-success my-3" data-bs-toggle="modal" data-bs-target="#getModal">Click Me</button>
+
+        <div class="modal fade" id="getModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">MODAL</h5>
+                        <button class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        This is Modal
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Static Modal</h2>
+
+        <button type="button  " class="btn btn-outline-primary  my-4" data-bs-toggle="modal" data-bs-target="#getStaticModal">Click Me</button>
+
+        <div class="modal fade" id="getStaticModal" data-bs-backdrop="static" aria-labelledby="StaticModal" aria-hidden="true"> 
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="StaticModal">MODAL</h5>
+                        <button class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        Static Modal
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Toggle Modal</h2>
+
+        <button type="button" class="btn btn-outline-primary my-4" data-bs-toggle="modal" data-bs-target="#ToggleModal">Toggle Modal</button>
+
+        <div class="modal fade" id="ToggleModal" data-bs-backdrop="static" aria-labelledby="toggle1" aria-hidden="true"> 
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="toggle1">MODAL</h5>
+                        <button class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        This is <span style="color: blueviolet; font-size: medium;"><strong>FIRST</strong></span> Modal.
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-target="#toggle2" data-bs-toggle="modal">Next Modal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="toggle2" data-bs-backdrop="static" aria-labelledby="toggle2" aria-hidden="true"> 
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="toggle">MODAL</h5>
+                        <button class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        This is <span style="color:brown; font-size: medium;"><strong>SECOND</strong></span> Modal.
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" >Save Changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-4">
+            <h2>Popover</h2>
+            <button type="button" class="btn btn-secondary" data-bs-toggle="popover" title="Popover" data-bs-content="It's a Popover.">Click for Popover</button>
+        </div>
+
+        
+        <div class="my-4 ">
+            <h2 class="mb-2">Spinner</h2>
+
+            <div class="spinner-border">
+
+            </div>
+        </div>
+
+
+
+
+
+        <script>
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+              return new bootstrap.Popover(popoverTriggerEl)
+            })
+        </script>
+
+        </div>
+    </body>
+</html>

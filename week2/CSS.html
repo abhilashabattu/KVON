@@ -207,7 +207,41 @@
             display: inline;
         }
 
-      
+       .grad1{
+        width: 250px;
+        height: 200px;
+        border: 2px solid black;
+        margin:2%;
+        background-image: linear-gradient(90deg, red,orange,yellow,green,blue,indigo,violet);
+       }
+
+       .grad2{
+        width: 250px;
+        height: 200px;
+        border: 2px solid black;
+        margin:2%;
+        background-image: linear-gradient(to bottom right,  rgb(223, 71, 160), rgba(255,0,0,0));
+       }
+
+       .grad3{
+        width: 250px;
+        height: 200px;
+        border: 2px solid black;
+        margin:2%;
+        background-image: radial-gradient(circle, red, yellow, green);
+       }
+
+       .gradDiv div{
+        float: left;
+       }
+
+       .grad4{
+        width: 250px;
+        height: 200px;
+        border-radius: 50%;
+        margin:2%;
+        background-image: conic-gradient(from 90deg, red, yellow, green, blue, black);
+       }
         
     </style>
     <body>
@@ -453,14 +487,15 @@
             <p>Over me to see the DropDown</p>
             <p class="dropDownResult">I am DropDown result.</p>
         </div>
-        <p>Kvon Tech Services Private Limited, founded in May 2024, is a cutting-edge provider of 
-            IT solutions with a focus on enabling businesses in the digital age through customized 
-            software and cloud services. The company provides a broad range of technological expertise, 
-            including software development, digital marketing, DevOps services, and AI/ML solutions.
-            Kvon Tech Services Private Limited, founded in May 2024, is a cutting-edge provider of 
-            IT solutions with a focus on enabling businesses in the digital age through customized 
-            software and cloud services. The company provides a broad range of technological expertise, 
-            including software development, digital marketing, DevOps services, and AI/ML solutions.
-        </p>
+
+        <hr>
+        <h1>Linear Gradient</h1>
+        <div class="gradDiv">
+            <div class="grad1"></div>
+            <div class="grad2"></div>
+            <div class="grad3"></div>
+            <div class="grad4"></div>
+        </div>
+        
     </body>
 </html>

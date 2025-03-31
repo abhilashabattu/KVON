@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid</title>
+        <style>
+            body{
+                background: url("calBackground.jpg");
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            *{
+                
+                box-sizing: border-box;
+            }
+
+            h1{
+                text-align: center;
+            }
+
+            h2{
+                text-align: center;
+            }
+
+            .girdContainer{
+                border: 1px solid black;
+                margin: auto;
+                width: 500px;
+                height: auto;
+                display: grid;
+                justify-items: space-evenly;
+                align-content: end;
+                grid-template-columns: auto auto auto auto auto;
+                gap: 10px;
+                padding: 10px;
+                background-color: rgb(169, 120, 214);
+            }
+
+            .girdContainer div{
+                padding: 5px;
+                background-color: #f1f1f1;
+                color: #000;
+                font-size: 30px;
+                text-align: center;
+                border: 1px solid black;
+            }
+
+            .calSpace{
+                grid-column: 1/span 5;
+                height: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <h2>Solve Your Problems with a Click</h2>
+        <hr>
+        <br><br>
+        <div class="girdContainer">
+            <div class="calSpace"></div>
+            <div>2nd</div>
+            <div>deg</div>
+            <div>sin</div>
+            <div>cos</div>
+            <div>tan</div>
+            <div>x^y</div>
+            <div>lg</div>
+            <div>ln</div>
+            <div>(</div>
+            <div>)</div>
+            <div>root</div>
+            <div>AC</div>
+            <div>Del</div>
+            <div>%</div>
+            <div>/</div>
+            <div>x!</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>x</div>
+            <div>1/x</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>-</div>
+            <div>PI</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+</div>
+            <div>e</div>
+            <div>0</div>
+            <div>00</div>
+            <div>.</div>
+            <div>=</div>
+        </div>
+    </body>
+</html>

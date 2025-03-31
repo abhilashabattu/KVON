@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headingContainer{
+    background-color: rgb(32, 32, 129);
+}
+
+.collegeHeading::after{
+    content: "";
+    width: 500px;
+    height: 3px;
+    display: block;
+    background-color:rgb(200, 200, 71);
+    text-align: start;
+}
