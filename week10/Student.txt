@@ -1,0 +1,11 @@
+ Student name : ree 
+ Age : 12 
+ Marks : 34
+
+ Student name : Anamika 
+ Age : 23 
+ Marks : 67
+
+ Student name : Avika 
+ Age : 34 
+ Marks : 43

@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #13072e;
+    --supporting-color: #3f2182;
+}
+
+.letterSpacing-1 {
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+.bg-13072e {
+    background-color: var(--main-color);
+}
+
+.bg-gradient {
+    background-color: var(--supporting-color);
+}
+
+.sectionHeadings {
+    font-family: "Poppins", sans-serif;
+}
+
+.homeSection {
+    height: 100vh;
+}
+
+
+
+/* Quiz Section */
+
+.text-13072e{
+    color:var(--supporting-color);
+}
+
+.card-img {
+
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    border-radius: 50%;
+    color: #1450a3;
+    background-color: #dce9fa;
+}
+
+.boxShadow {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

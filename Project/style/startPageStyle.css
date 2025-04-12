@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+:root {
+    --main-color: #13072e;
+    --supporting-color: #3f2182;
+}
+
+.bg-13072e {
+    background-color: var(--main-color);
+}
+
+.startContainer{
+    height: 100vh;
+}
+
+.text-13072e{
+    color:var(--supporting-color);
+}
+
+.quizImage{
+    width:200px;
+    margin: auto;
+}
