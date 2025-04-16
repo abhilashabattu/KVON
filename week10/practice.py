@@ -74,7 +74,12 @@ class toDOList:
         
 t = toDOList()
 
-operation= int(input("Enter the operation you want to perform : "))
+print("Enter 1 to add data")
+print("Enter 2 to view data")
+print("Enter 3 to update data")
+print("Enter 4 to remove data")
+
+operation= int(input("\nEnter the operation you want to perform : "))
 
 if operation==1:
     name=input("Enter Name :")

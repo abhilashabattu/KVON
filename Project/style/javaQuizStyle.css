@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #13072e;
+    --supporting-color: #3f2182;
+}
+
+
+.bg-13072e {
+    background-color: var(--main-color);
+}
+
+.bg-gradient {
+    background-color: var(--supporting-color);
+}
+
+
+/* SideNav Section */
+.sideNav{
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+   
+}
+
+/* Question Section */
+
+
+
+

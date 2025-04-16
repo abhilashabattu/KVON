@@ -1,3 +1,5 @@
+#Implement a function that reverses a given string without using built-in functions.
+
 str = "Education"
 length = len(str)
 

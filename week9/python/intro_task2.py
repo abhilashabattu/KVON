@@ -1,3 +1,5 @@
+# Create a simple calculator that performs addition, subtraction, multiplication, and division.
+
 number1 = int(input("Enter first number : "))
 number2 = int(input("Enter secound number : "))
 

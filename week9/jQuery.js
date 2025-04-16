@@ -2,11 +2,6 @@
 $(document).ready(function () {
 
     
-
-    
-
-
-
     let currentIndex = 1;
     let score = 0;
     let selectedAnswer = "";
@@ -24,8 +19,6 @@ $(document).ready(function () {
             
         });
         
-        
-
     };
 
     

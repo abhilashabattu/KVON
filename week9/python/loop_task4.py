@@ -1,3 +1,5 @@
+#Create a number guessing game where the program randomly selects a number between 1-100, and the user has to guess it
+
 import random
 
 randomNumber = random.randrange(1,101)
