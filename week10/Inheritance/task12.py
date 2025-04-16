@@ -1,3 +1,7 @@
+# Child Classes:
+# Rectangle → Area = l*b
+# Circle → Area = π*r²
+
 class Book:
     def __init__(self,x):
         self.x = x

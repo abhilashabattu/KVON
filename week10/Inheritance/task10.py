@@ -1,3 +1,8 @@
+# Create an Animal Class:
+# Animal Class: Attributes: Name, Sound
+# Dog Class: Inherits Animal, Add Bark sound
+# Cat Class: Inherits Animal, Add Meow sound
+
 class Animal:
     def __init__(self,name,sound):
         self.name = name

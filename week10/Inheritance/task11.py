@@ -1,3 +1,6 @@
+# Create a Shape Class:
+# Parent Class: Shape → Method: area()
+
 class Shape:
    def area():
       pass
